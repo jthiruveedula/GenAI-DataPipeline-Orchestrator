@@ -1,0 +1,46 @@
+# GenAI-DataPipeline-Orchestrator - Python Dependencies
+# Compatible with GCP Cloud Composer 2 (Airflow 2.7+)
+
+# ---- Apache Airflow (pinned to Composer version) ----
+apache-airflow==2.7.3
+apache-airflow-providers-google==10.13.1
+apache-airflow-providers-http==4.7.0
+apache-airflow-providers-slack==8.5.0
+
+# ---- GCP Client Libraries ----
+google-cloud-bigquery==3.13.0
+google-cloud-storage==2.13.0
+google-cloud-pubsub==2.18.4
+google-cloud-secret-manager==2.17.0
+google-cloud-monitoring==2.18.0
+google-cloud-logging==3.8.0
+
+# ---- Vertex AI / GenAI ----
+vertexai==1.42.1
+google-cloud-aiplatform==1.42.1
+
+# ---- Data Processing ----
+pandas==2.1.4
+numpy==1.26.2
+pyarrow==14.0.1
+
+# ---- Utilities ----
+pydantic==2.5.2
+tenacity==8.2.3
+requests==2.31.0
+python-dateutil==2.8.2
+pytz==2023.3.post1
+
+# ---- Monitoring & Alerting ----
+opentelemetry-api==1.22.0
+opentelemetry-sdk==1.22.0
+prometheus-client==0.19.0
+
+# ---- Development & Testing ----
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+black==23.12.0
+flake8==6.1.0
+mypy==1.7.1
+
